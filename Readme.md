@@ -19,4 +19,5 @@ unzip -q main.zip
 mv expos-bootstrap-main myexpos
 cd myexpos
 ./download.sh
+cd ..
 ```
