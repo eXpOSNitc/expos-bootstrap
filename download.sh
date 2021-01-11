@@ -2,7 +2,7 @@
 
 download() {
     component="$1"
-    echo "Downloading $component .."
+    echo "Downloading $component .. \r" -n
     wget "https://github.com/eXpOSNitc/$component/archive/master.zip" -c -q -O "$component.zip"
     unzip -q "$component".zip
     mv "$component"-master "$component"
@@ -26,6 +26,7 @@ bootstrap() {
     ./download.sh
     rm Readme.md # Because the Readme is for the repo and will confuse if placed
                  # in myexpos folder
+    echo "Download complete."
     cd ..
 }
 
