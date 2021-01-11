@@ -7,18 +7,12 @@ A Makefile is also provided to compile them all in one go.
 
 # Instructions
 
-* Download the latest version from here: https://github.com/eXpOSNitc/expos-bootstrap/archive/main.zip
-* Unzip to `myexpos`
-* Run `download.sh`
-
-If you are a beginner, just copy and paste the below code in your terminal and press enter:
+Copy the following snippet to your terminal and press enter.
 
 ```bash
-wget -q https://github.com/eXpOSNitc/expos-bootstrap/archive/main.zip
-unzip -q main.zip
-rm main.zip
-mv expos-bootstrap-main myexpos
-cd myexpos
-./download.sh
-cd ..
+curl -sSf https://github.com/eXpOSNitc/expos-bootstrap/raw/main/download.sh | sh
 ```
+
+This should download all the necessary components ready for compiling.
+
+Then you can run `make` to compile them.

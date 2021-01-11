@@ -10,7 +10,33 @@ download() {
     echo "$component downloaded."
 }
 
-download expl
-download spl
-download xfs-interface
-download xsm
+myexpos() {
+    download expl
+    download spl
+    download xfs-interface
+    download xsm
+}
+
+bootstrap() {
+    wget -q https://github.com/eXpOSNitc/expos-bootstrap/archive/main.zip
+    unzip -q main.zip
+    rm main.zip
+    mv expos-bootstrap-main myexpos
+    cd myexpos
+    ./download.sh
+    cd ..
+}
+
+
+if [ -f "Makefile" ]; then
+    # If Makefile is there, continue downloading myexpos components
+    myexpos
+else
+    # The user is executing directly from `wget | sh`
+    # so create the folder and download makefile
+    bootstrap
+
+    # PS: We could have just downloaded the Makefile alone in the bootstrap
+    # function. But downloading the repo provides us the possibilty to provide
+    # additional helper files in the future.
+fi
