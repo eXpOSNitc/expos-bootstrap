@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-function download() {
+download() {
     component="$1"
     echo "Downloading $component .."
     wget "https://github.com/eXpOSNitc/$component/archive/master.zip" -c -q -O "$component.zip"

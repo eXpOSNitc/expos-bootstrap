@@ -9,7 +9,7 @@ A Makefile is also provided to compile them all in one go.
 
 * Download the latest version from here: https://github.com/eXpOSNitc/expos-bootstrap/archive/main.zip
 * Unzip to `myexpos`
-* Run `download.bash`
+* Run `download.sh`
 
 If you are a beginner, just copy and paste the below code in your terminal and press enter:
 
