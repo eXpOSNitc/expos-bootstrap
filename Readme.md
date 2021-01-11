@@ -10,7 +10,7 @@ A Makefile is also provided to compile them all in one go.
 Copy the following snippet to your terminal and press enter.
 
 ```bash
-curl -sSf https://github.com/eXpOSNitc/expos-bootstrap/raw/main/download.sh | sh
+curl -sSf https://raw.githubusercontent.com/eXpOSNitc/expos-bootstrap/main/download.sh | sh
 ```
 
 This should download all the necessary components ready for compiling.
