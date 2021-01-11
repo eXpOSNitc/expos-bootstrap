@@ -18,6 +18,12 @@ myexpos() {
 }
 
 bootstrap() {
+    if [ -e myexpos ]; then
+        echo "myexpos folder exists."
+        echo "Please remove it and re-run the script to download again."
+        return
+    fi;
+
     wget -q https://github.com/eXpOSNitc/expos-bootstrap/archive/main.zip
     unzip -q main.zip
     rm main.zip
