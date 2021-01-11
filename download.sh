@@ -24,6 +24,8 @@ bootstrap() {
     mv expos-bootstrap-main myexpos
     cd myexpos
     ./download.sh
+    rm Readme.md # Because the Readme is for the repo and will confuse if placed
+                 # in myexpos folder
     cd ..
 }
 
