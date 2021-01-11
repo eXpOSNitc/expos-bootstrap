@@ -2,7 +2,7 @@
 
 download() {
     component="$1"
-    echo -n "Downloading $component .. \r"
+    echo "Downloading $component .. "
     wget "https://github.com/eXpOSNitc/$component/archive/master.zip" -c -q -O "$component.zip"
     unzip -q "$component".zip
     mv "$component"-master "$component"
