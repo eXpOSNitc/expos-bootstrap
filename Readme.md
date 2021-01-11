@@ -15,7 +15,7 @@ If you are a beginner, just copy and paste the below code in your terminal and p
 
 ```bash
 wget -q https://github.com/eXpOSNitc/expos-bootstrap/archive/main.zip
-unzip main.zip
+unzip -q main.zip
 mv expos-bootstrap-main myexpos
 cd myexpos
 ./download.sh
